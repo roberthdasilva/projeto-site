@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.menu-lateral {
+    width: 70px;
+    background-color: white;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.menu-lateral .logo-area img {
+    width: 36px;
+    margin-bottom: 20px;
+}
+
+.menu-itens {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-itens .material-icons {
+    font-size: 24px;
+    color: #5f6368;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+}
+
+.menu-itens .material-icons:hover {
+    background-color: #e8f0fe;
+    color: #1a73e8;
+}
+
+.menu-toggle {
+    font-size: 28px;
+    cursor: pointer;
+    padding: 12px;
+}
+
+.topo {
+    background-color: #1a73e8;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topo-esquerdo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-header {
+    width: 32px;
+    height: 32px;
+}
+
+main.conteudo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.turmas-container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card-turma {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+}
+
+.card-turma:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.imagem-topo {
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.conteudo-card {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.conteudo-card h2 {
+    font-size: 1.1rem;
+    color: #1a73e8;
+    margin-bottom: 5px;
+}
+
+.conteudo-card .professor {
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.conteudo-card .codigo {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+.codigo span {
+    font-weight: bold;
+}
+
+.botoes-inferiores {
+    margin-top: auto;
+    text-align: right;
+}
+
+.botoes-inferiores .material-icons {
+    font-size: 20px;
+    color: #5f6368;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+.botoes-inferiores .material-icons:hover {
+    background-color: #e8f0fe;
+    color: #1a73e8;
+}
