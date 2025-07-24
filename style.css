@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background-color: #f1f1f1;
+    background-color: white;
 }
 
 .container {
@@ -17,7 +17,6 @@ body {
 .menu-lateral {
     width: 70px;
     background-color: white;
-    border-right: 1px solid #ddd;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,10 +91,15 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+.conteudo-principal {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
 .topo {
-    background-color: #1a73e8;
-    color: white;
-    padding: 15px 20px;
+    background-color: #fff;
+    padding: 16px 16px; 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -104,96 +108,130 @@ body {
 .topo-esquerdo {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 16px;
 }
 
 .logo-header {
-    width: 32px;
-    height: 32px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
 }
 
-main.conteudo {
-    flex: 1;
+.product-name a {
+    font-size: 22px;
+    text-decoration: none;
+    color: #5f6368;
+}
+
+.topo-direito {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.topo-direito .material-icons {
+    color: #5f6368;
+    cursor: pointer;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .turmas-container {
-    padding: 20px;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.imagem-topo {
+    position: relative;
+    height: 100px;
+    padding: 16px;
+    color: white;
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.avatar-professor {
+    position: absolute;
+    right: 16px;
+    bottom: -24px;
+    width: 76px;
+    height: 76px;
+}
+
+.avatar-professor img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
 }
 
 .card-turma {
     background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-    flex: 1 1 250px;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    flex: 0 1 300px;
+    transition: box-shadow 0.2s ease;
 }
 
 .card-turma:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 2px 6px 2px rgba(60, 64, 67, 0.15);
 }
 
 .imagem-topo {
     height: 100px;
-    background-size: cover;
-    background-position: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    padding: 16px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-turma h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.info-turma a {
+    text-decoration: none;
+    color: white;
+}
+
+.info-turma .professor {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.more-vert {
+    cursor: pointer;
 }
 
 .conteudo-card {
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     flex: 1;
-}
-
-.conteudo-card h2 {
-    font-size: 1.1rem;
-    color: #1a73e8;
-    margin-bottom: 5px;
-}
-
-.conteudo-card .professor {
-    font-size: 0.9rem;
-    color: #444;
-}
-
-.conteudo-card .codigo {
-    font-size: 0.85rem;
-    color: #666;
-    margin-top: 5px;
-}
-
-.codigo span {
-    font-weight: bold;
+    min-height: 120px;
 }
 
 .botoes-inferiores {
-    margin-top: auto;
+    border-top: 1px solid #dadce0;
+    padding: 8px;
     text-align: right;
 }
 
 .botoes-inferiores .material-icons {
-    font-size: 20px;
     color: #5f6368;
     cursor: pointer;
-    padding: 6px;
+    padding: 8px;
     border-radius: 50%;
-    transition: background-color 0.2s;
 }
 
 .botoes-inferiores .material-icons:hover {
-    background-color: #e8f0fe;
-    color: #1a73e8;
+    background-color: #f1f3f4;
 }
