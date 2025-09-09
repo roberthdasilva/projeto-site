@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="shortcut icon" href="../static/favicon.png" type="image/x-icon">
+  <title>Turmas - CodeRoom</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+      margin: 0;
+    }
+
+    h2 {
+      color: #34495e;
+      margin-bottom: 15px;
+      margin-left: 12px;
+      border-left: 5px solid #27ae60;
+      font-size: 1.7em;
+      padding-left: 10px;
+    }
+
+    .container {
+      margin-right: 10px;
+      background: #ffffff;
+    }
+
+    .turma-card {
+      background: #ecf0f1;
+      padding: 15px;
+      border-radius: 10px;
+      margin: 12px 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+
+    .turma-card:hover {
+      background: #dfe6e9;
+    }
+
+    .turma-card h3 {
+      margin: 0;
+      color: #2c3e50;
+    }
+
+    .turma-card p {
+      margin: 5px 0 0;
+      color: #7f8c8d;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <aside class="menu-lateral">
+      <div class="logo-area">
+        <span class="material-icons menu-toggle">menu</span>
+      </div>
+      <nav class="menu-itens">
+        <a href="../index.html" class="item-menu">
+          <span class="material-icons">home</span>
+          <span class="menu-texto">Início</span>
+        </a>
+        <a href="../pages/agenda-page.html" class="item-menu">
+          <span class="material-icons">calendar_today</span>
+          <span class="menu-texto">Agenda</span>
+        </a>
+        <a href="#" class="item-menu ativo">
+          <span class="material-icons">school</span>
+          <span class="menu-texto">Turmas</span>
+        </a>
+        <a href="../pages/arquivadas-page.html" class="item-menu">
+          <span class="material-icons">archive</span>
+          <span class="menu-texto">Arquivadas</span>
+        </a>
+      </nav>
+    </aside>
+
+    <main class="conteudo-principal">
+      <header class="topo">
+        <div class="topo-esquerdo">
+          <img src="../static/classroom-logo.png" alt="Logo" class="logo-header">
+          <span class="product-name"><a href="index.html">Sala de Aula</a></span>
+        </div>
+        <div class="topo-direito">
+          <span class="material-icons">add</span>
+          <span class="material-icons">apps</span>
+          <img class="avatar" src="https://lh3.googleusercontent.com/a/default-user=s40-p" alt="Avatar">
+        </div>
+      </header>
+
+      <section class="conteudo-pagina">
+        <h2>Minhas Turmas</h2>
+
+        <div class="turma-card">
+          <h3>📘 Construção de Sites</h3>
+          <p>Professor: Washigton Lacerda</p>
+        </div>
+
+        <div class="turma-card">
+          <h3>📗 Filosofia</h3>
+          <p>Professor: Isabela de Castro</p>
+        </div>
+
+        <div class="turma-card">
+          <h3>📙 Geografia II</h3>
+          <p>Professor: Girlan Cândido</p>
+        </div>
+
+        <div class="turma-card">
+          <h3>📘 Artes</h3>
+          <p>Professor: Mayra Carmeli</p>
+        </div>
+
+        <div class="turma-card">
+          <h3>📗 Biologia II</h3>
+          <p>Professor: Miguel Santana</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="../script.js"></script>
+</body>
+
+</html>

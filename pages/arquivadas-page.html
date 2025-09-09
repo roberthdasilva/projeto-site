@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="shortcut icon" href="../static/favicon.png" type="image/x-icon">
+  <title>Arquivadas - CodeRoom</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+      margin: 0;
+    }
+
+    .container {
+      margin-right: 10px;
+      background: #ffffff;
+    }
+
+    .arquivo-card {
+      background: #f1f2f6;
+      padding: 15px;
+      border-radius: 10px;
+      margin: 12px 12px;
+      border-left: 5px solid #7f8c8d;
+      transition: 0.3s;
+    }
+
+    .arquivo-card:hover {
+      background: #dcdde1;
+    }
+
+    .arquivo-card h3 {
+      margin: 0;
+      color: #2c3e50;
+    }
+
+    .arquivo-card p {
+      margin: 5px 0 0;
+      color: #636e72;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <aside class="menu-lateral">
+      <div class="logo-area">
+        <span class="material-icons menu-toggle">menu</span>
+      </div>
+      <nav class="menu-itens">
+        <a href="../index.html" class="item-menu">
+          <span class="material-icons">home</span>
+          <span class="menu-texto">Início</span>
+        </a>
+        <a href="../pages/agenda-page.html" class="item-menu">
+          <span class="material-icons">calendar_today</span>
+          <span class="menu-texto">Agenda</span>
+        </a>
+        <a href="../pages/turmas-page.html" class="item-menu">
+          <span class="material-icons">school</span>
+          <span class="menu-texto">Turmas</span>
+        </a>
+        <a href="#" class="item-menu ativo">
+          <span class="material-icons">archive</span>
+          <span class="menu-texto">Arquivadas</span>
+        </a>
+      </nav>
+    </aside>
+
+    <main class="conteudo-principal">
+      <header class="topo">
+        <div class="topo-esquerdo">
+          <img src="../static/classroom-logo.png" alt="Logo" class="logo-header">
+          <span class="product-name"><a href="index.html">Sala de Aula</a></span>
+        </div>
+        <div class="topo-direito">
+          <span class="material-icons">add</span>
+          <span class="material-icons">apps</span>
+          <img class="avatar" src="https://lh3.googleusercontent.com/a/default-user=s40-p" alt="Avatar">
+        </div>
+      </header>
+
+      <section class="conteudo-pagina">
+        <h2>Turmas Arquivadas</h2>
+
+        <div class="arquivo-card">
+          <h3>📕 Eletrônica Básica</h3>
+          <p>Professor: Washigton Lacerda</p>
+        </div>
+
+        <div class="arquivo-card">
+          <h3>📒 Inglês</h3>
+          <p>Professor: Dinho Feijó</p>
+        </div>
+
+        <div class="arquivo-card">
+          <h3>📓 Educação Física</h3>
+          <p>Professor: Noberto Freire</p>
+        </div>
+
+        <div class="arquivo-card">
+          <h3>📒 Biologia I</h3>
+          <p>Professor: Paulo</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="../script.js"></script>
+</body>
+
+</html>

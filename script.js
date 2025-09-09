@@ -10,3 +10,10 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+// Script para marcar compromissos como concluídos
+document.querySelectorAll("ul li").forEach(item => {
+    item.addEventListener("click", () => {
+        item.classList.toggle("done");
+    });
+});
