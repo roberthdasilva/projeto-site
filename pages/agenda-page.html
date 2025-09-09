@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" href="../static/favicon.png" type="image/x-icon">
+    <title>Agenda - CodeRoom</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+        }
+
+        .container {
+            margin-right: 10px;
+            background: #ffffff;
+        }
+
+        h2 {
+            color: #34495e;
+            margin: 12px;
+            border-left: 5px solid #27ae60;
+            font-size: 1.7em;
+            padding-left: 10px;
+        }
+
+        ul li {
+            margin: 12px;
+            padding: 10px;
+            background: #ecf0f1;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        ul li:hover {
+            background: #dfe6e9;
+        }
+
+        ul li.done {
+            background: #27ae60;
+            color: #fff;
+            text-decoration: line-through;
+        }
+
+        .conteudo-pagina h2 {
+            color: #34495e;
+            border-left: 5px solid #27ae60;
+            padding-left: 10px;
+        }
+
+        table {
+            width: 300px;
+            font-size: 14px;
+            border-collapse: collapse;
+            margin: 12px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 6px;
+            /* menos espaço interno */
+            width: 40px;
+            height: 40px;
+        }
+
+        th {
+            background: #2980b9;
+            color: #fff;
+        }
+
+        td {
+            background: #ecf0f1;
+        }
+
+        td.evento {
+            background: #1010c5;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        td.highlight {
+            background: #27ae60;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <aside class="menu-lateral">
+            <div class="logo-area">
+                <span class="material-icons menu-toggle">menu</span>
+            </div>
+            <nav class="menu-itens">
+                <a href="../index.html" class="item-menu">
+                    <span class="material-icons">home</span>
+                    <span class="menu-texto">Início</span>
+                </a>
+                <a href="#" class="item-menu ativo">
+                    <span class="material-icons">calendar_today</span>
+                    <span class="menu-texto">Agenda</span>
+                </a>
+                <a href="../pages/turmas-page.html" class="item-menu">
+                    <span class="material-icons">school</span>
+                    <span class="menu-texto">Turmas</span>
+                </a>
+                <a href="../pages/arquivadas-page.html" class="item-menu">
+                    <span class="material-icons">archive</span>
+                    <span class="menu-texto">Arquivadas</span>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="conteudo-principal">
+            <header class="topo">
+                <div class="topo-esquerdo">
+                    <img src="../static/classroom-logo.png" alt="Logo" class="logo-header">
+                    <span class="product-name"><a href="index.html">Sala de Aula</a></span>
+                </div>
+                <div class="topo-direito">
+                    <span class="material-icons">add</span>
+                    <span class="material-icons">apps</span>
+                    <img class="avatar" src="https://lh3.googleusercontent.com/a/default-user=s40-p" alt="Avatar">
+                </div>
+            </header>
+
+            <section class="conteudo-pagina">
+                <h2>Próximos compromissos</h2>
+                <ul>
+                    <li>✔️ Trabalho de Filosofia – 10/09</li>
+                    <li>📖 Prova de Geografia – 15/09</li>
+                    <li>🧪 Experimento de Biologia – 18/09</li>
+                    <li>🥳 Dia 01 Campus Party – 27/09</li>
+                    <li>🥳 Dia 02 Campus Party – 28/09</li>
+                    <li>🥳 Dia 03 Campus Party – 29/09</li>
+                    <li>🥳 Dia 04 Campus Party – 30/09</li>
+                </ul>
+
+                <h2>Calendário de Setembro</h2>
+                <table border="1" cellpadding="8">
+                    <tr>
+                        <th>Dom</th>
+                        <th>Seg</th>
+                        <th>Ter</th>
+                        <th>Qua</th>
+                        <th>Qui</th>
+                        <th>Sex</th>
+                        <th>Sáb</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td class="evento"><b>10</b></td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td class="evento"><b>15</b></td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td class="evento"><b>18</b></td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td class="evento"><b>27</b></td>
+                        <td class="evento"><b>28</b></td>
+                    </tr>
+                    <tr>
+                        <td class="evento"><b>29</b></td>
+                        <td class="evento"><b>30</b></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </section>
+
+        </main>
+    </div>
+    <script src="../script.js"></script>
+</body>
+
+</html>
