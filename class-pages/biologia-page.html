@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Filosofia - CodeRoom</title>
+    <style>
+        /* Capa da turma */
+        .capa-turma {
+            position: relative;
+            height: 220px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            display: flex;
+            align-items: flex-end;
+            padding: 20px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            overflow: hidden;
+        }
+
+        .capa-turma::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+        }
+
+        .capa-turma .info-capa {
+            position: relative;
+            z-index: 2;
+        }
+
+        .capa-turma .info-capa h1 {
+            margin: 0;
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        .capa-turma .info-capa p {
+            margin: 5px 0 0;
+            font-size: 16px;
+        }
+
+        .avatar-professor-grande {
+            position: absolute;
+            right: 20px;
+            bottom: 10px;
+            border-radius: 50%;
+            overflow: hidden;
+            width: 75px;
+            height: 75px;
+            border: 3px solid white;
+            z-index: 2;
+        }
+
+        /* Abas */
+        .abas-turma {
+            display: flex;
+            gap: 25px;
+            margin: 50px 0 20px 0;
+            border-bottom: 1px solid #ddd;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .abas-turma a {
+            padding: 12px 0;
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            position: relative;
+            transition: color 0.2s ease;
+        }
+
+        .abas-turma a:hover {
+            color: #1967d2;
+        }
+
+        .abas-turma a.ativa {
+            color: #1967d2;
+        }
+
+        .abas-turma a.ativa::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #1967d2;
+            border-radius: 2px;
+        }
+
+        /* Seções */
+        .titulo-secao {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        /* Posts no mural */
+        .post-card {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .post-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+        }
+
+        .post-icone {
+            color: #1967d2;
+            font-size: 24px;
+        }
+
+        .post-conteudo p {
+            margin: 0;
+            font-size: 15px;
+            color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Menu lateral -->
+        <aside class="menu-lateral">
+            <div class="logo-area">
+                <a href="../index.html"><span class="material-icons">arrow_back</span></a>
+            </div>
+        </aside>
+
+        <!-- Conteúdo principal -->
+        <main class="conteudo-principal">
+
+            <!-- Capa da turma -->
+            <div class="capa-turma" style="background-color: #8CAC59;">
+                <div class="info-capa">
+                    <h1>Biologia</h1>
+                    <p>Professor: Miguel Santana</p>
+                </div>
+                <div class="avatar-professor-grande">
+                    <img src="../static/teachers-avatar/miguel-foto.jpg" alt="Foto do professor">
+                </div>
+            </div>
+
+            <!-- Navegação interna da turma -->
+            <nav class="abas-turma">
+                <a href="#" class="aba ativa">Mural</a>
+                <a href="#">Atividades</a>
+                <a href="#">Pessoas</a>
+                <a href="#">Materiais</a>
+            </nav>
+
+            <section class="conteudo-turma">
+                <h2 class="titulo-secao">📢 Mural</h2>
+
+                <div class="post-card">
+                    <div class="post-icone">
+                        <span class="material-icons">campaign</span>
+                    </div>
+                    <div class="post-conteudo">
+                        <p><strong>Bem-vindos</strong> à turma de Biologia! 🚀</p>
+                    </div>
+                </div>
+
+                <div class="post-card">
+                    <div class="post-icone">
+                        <span class="material-icons">event_note</span>
+                    </div>
+                    <div class="post-conteudo">
+                        <p><strong>Lembrete:</strong> Preencher a atividade de Biologia.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
